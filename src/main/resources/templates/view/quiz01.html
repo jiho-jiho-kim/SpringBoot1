@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div>[[${time}]]</div>
+	
+	<hr>
+	<ul>
+	<li th:each="c: ${ccc}" th:if = "${c.sno % 3 == 0}">[[${c}]]</li>
+		
+	</ul>
+	
+</body>
+</html>
